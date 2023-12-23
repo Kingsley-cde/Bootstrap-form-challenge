@@ -17,38 +17,35 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <form class="row g-3 needs-validation" novalidate>
-      
+    <form class="row g-3 was-validated" novalidate>
+      <div class="col-md-4">
+        <label for="Full name" class="form-label">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Full name"
+          id="Full name"
+          value="kingsley"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please fill out this field</div>
+      </div>
+      <div class="col-md-4">
+        <label for="InputEmail1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="InputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="Username" class="form-label">Username</label>
+        <label class="visually-hidden" for="autoSizingInputGroup"
+          >Username</label
+        >
 
-        <div class="col-md-4">
-          <label for="Full name" class="form-label">Full Name</label>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Full name"
-            id="Full name"
-            value="kingsley"
-            required
-          />
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="InputEmail1" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="InputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="col-md-4">
-          <label for="Username" class="form-label">Username</label>
-          <label class="visually-hidden" for="autoSizingInputGroup"
-            >Username</label
-          >
-        
         <div class="input-group">
           <div class="input-group-text">@</div>
           <input
@@ -60,47 +57,44 @@
         </div>
       </div>
 
-      <div class="row">
-        <p></p>
-        <label for="Gender" class="form-label">Gender</label>
-        <div class="col-md-4">
+      <label for="Gender" class="form-label">Gender</label>
+      <div class="col-md-4">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="RadioDefault"
+          id="RadioDefault1"
+        />
+        <label class="form-check-label" for="RadioDefault1"> Male </label>
+        <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="RadioDefault"
+          id="RadioDefault2"
+          checked
+        />
+        <label class="form-check-label" for="RadioDefault2"> Female </label>
+      </div>
+      <div class="col-md-4">
+        <div class="form-check form-switch">
           <input
             class="form-check-input"
-            type="radio"
-            name="RadioDefault"
-            id="RadioDefault1"
+            type="checkbox"
+            id="availableforwork"
           />
-          <label class="form-check-label" for="RadioDefault1"> Male </label>
-          <br />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="RadioDefault"
-            id="RadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="RadioDefault2"> Female </label>
-        </div>
-        <div class="col-md-4">
-          <div class="form-check form-switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="availableforwork"
-            />
-            <label class="form-check-label" for="availableforwork"
-              >Available for Work</label
-            >
-          </div>
-        </div>
-        <div class="col-md-4">
-          <input class="form-control" type="file" id="formFile" />
-          <label for="formFile" class="form-label"
-            >Upload your resume here.</label
+          <label class="form-check-label" for="availableforwork"
+            >Available for Work</label
           >
         </div>
-      
-     
+      </div>
+      <div class="col-md-4">
+        <input class="form-control" type="file" id="formFile" />
+        <label for="formFile" class="form-label"
+          >Upload your resume here.</label
+        >
+      </div>
+
       <div class="col-md-4">
         <button class="btn btn-primary" type="submit">Submit form</button>
       </div>
