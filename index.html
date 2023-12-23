@@ -17,16 +17,17 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <form action="row">
-      <p></p>
+    <form class="row g-3 needs-validation" novalidate>
+      
 
-      <div class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
           <label for="Full name" class="form-label">Full Name</label>
           <input
             type="text"
             class="form-control"
-            aria-label="First name"
+            aria-label="Full name"
+            id="Full name"
+            value="kingsley"
             required
           />
           <div class="valid-feedback">
@@ -98,10 +99,10 @@
             >Upload your resume here.</label
           >
         </div>
-      </div>
-      <p></p>
+      
+     
       <div class="col-md-4">
-        <button class="btn btn-primary" type="button">Submit form</button>
+        <button class="btn btn-primary" type="submit">Submit form</button>
       </div>
     </form>
   </body>
